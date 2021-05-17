@@ -20,20 +20,20 @@ _e：异常对象
 
 """
 
-_i = iter(EXPR)  # EXPR是一个可迭代对象，_i其实是子生成器；
-try:
-	_y = next(_i)  # 预激子生成器，把产出的第一个值存在_y中；
-except StopIteration as _e:
-	_r = _e.value  # 如果抛出了`StopIteration`异常，那么就将异常对象的`value`属性保存到_r，这是最简单的情况的返回值；
-else:
-	while 1:  # 尝试执行这个循环，委托生成器会阻塞；
-		_s = yield _y  # 生产子生成器的值，等待调用方`send()`值，发送过来的值将保存在_s中；
-		try:
-			_y = _i.send(_s)  # 转发_s，并且尝试向下执行；
-		except StopIteration as _e:
-			_r = _e.value  # 如果子生成器抛出异常，那么就获取异常对象的`value`属性存到_r，退出循环，恢复委托生成器的运行；
-			break
-RESULT = _r  # _r就是整个yield from表达式返回的值。
+# _i = iter(EXPR)  # EXPR是一个可迭代对象，_i其实是子生成器；
+# try:
+# 	_y = next(_i)  # 预激子生成器，把产出的第一个值存在_y中；
+# except StopIteration as _e:
+# 	_r = _e.value  # 如果抛出了`StopIteration`异常，那么就将异常对象的`value`属性保存到_r，这是最简单的情况的返回值；
+# else:
+# 	while 1:  # 尝试执行这个循环，委托生成器会阻塞；
+# 		_s = yield _y  # 生产子生成器的值，等待调用方`send()`值，发送过来的值将保存在_s中；
+# 		try:
+# 			_y = _i.send(_s)  # 转发_s，并且尝试向下执行；
+# 		except StopIteration as _e:
+# 			_r = _e.value  # 如果子生成器抛出异常，那么就获取异常对象的`value`属性存到_r，退出循环，恢复委托生成器的运行；
+# 			break
+# RESULT = _r  # _r就是整个yield from表达式返回的值。
 
 """
 1. 子生成器可能只是一个迭代器，并不是一个作为协程的生成器，所以它不支持.throw()和.close()方法；
@@ -41,45 +41,45 @@ RESULT = _r  # _r就是整个yield from表达式返回的值。
 3. 调用方让子生成器自己抛出异常
 4. 当调用方使用next()或者.send(None)时，都要在子生成器上调用next()函数，当调用方使用.send()发送非 None 值时，才调用子生成器的.send()方法；
 """
-_i = iter(EXPR)
-try:
-	_y = next(_i)
-except StopIteration as _e:
-	_r = _e.value
-else:
-	while 1:
-		try:
-			_s = yield _y
-		except GeneratorExit as _e:
-			try:
-				_m = _i.close
-			except AttributeError:
-				pass
-			else:
-				_m()
-			raise _e
-		except BaseException as _e:
-			_x = sys.exc_info()
-			try:
-				_m = _i.throw
-			except AttributeError:
-				raise _e
-			else:
-				try:
-					_y = _m(*_x)
-				except StopIteration as _e:
-					_r = _e.value
-					break
-		else:
-			try:
-				if _s is None:
-					_y = next(_i)
-				else:
-					_y = _i.send(_s)
-			except StopIteration as _e:
-				_r = _e.value
-				break
-RESULT = _r
+# _i = iter(EXPR)
+# try:
+# 	_y = next(_i)
+# except StopIteration as _e:
+# 	_r = _e.value
+# else:
+# 	while 1:
+# 		try:
+# 			_s = yield _y
+# 		except GeneratorExit as _e:
+# 			try:
+# 				_m = _i.close
+# 			except AttributeError:
+# 				pass
+# 			else:
+# 				_m()
+# 			raise _e
+# 		except BaseException as _e:
+# 			_x = sys.exc_info()
+# 			try:
+# 				_m = _i.throw
+# 			except AttributeError:
+# 				raise _e
+# 			else:
+# 				try:
+# 					_y = _m(*_x)
+# 				except StopIteration as _e:
+# 					_r = _e.value
+# 					break
+# 		else:
+# 			try:
+# 				if _s is None:
+# 					_y = next(_i)
+# 				else:
+# 					_y = _i.send(_s)
+# 			except StopIteration as _e:
+# 				_r = _e.value
+# 				break
+# RESULT = _r
 
 """
 看完代码，我们总结一下关键点：
