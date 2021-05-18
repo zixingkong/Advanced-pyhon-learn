@@ -19,7 +19,8 @@ pool = ''
 # sem = asyncio.Semaphore(4)  用来控制并发数，不指定会全速运行
 stop = False
 headers = {
-	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) \
+	Chrome/61.0.3163.100 Safari/537.36'
 }
 MAX_PAGE = 10
 TABLE_NAME = 'data'  # 数据表名
