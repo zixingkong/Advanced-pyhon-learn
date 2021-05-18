@@ -31,9 +31,9 @@ crawled_links_detail = set()  # 爬取完成的链接集合，方便去重
 
 
 async def fetch(url, session):
-	'''
+	"""
 	aiohttp获取网页源码
-	'''
+	"""
 	# async with sem:
 	try:
 		async with session.get(url, headers=headers, verify_ssl=False) as resp:
@@ -45,9 +45,9 @@ async def fetch(url, session):
 
 
 def extract_links(source):
-	'''
+	"""
 	提取出详情页的链接
-	'''
+	"""
 	pq = PyQuery(source)
 	for link in pq.items("a"):
 		_url = link.attr("href")
@@ -58,9 +58,9 @@ def extract_links(source):
 
 
 def extract_elements(source):
-	'''
+	"""
 	提取出详情页里面的详情内容
-	'''
+	"""
 	try:
 		dom = etree.HTML(source)
 		id = dom.xpath('//link[@rel="canonical"]/@href')[0]
@@ -77,10 +77,10 @@ def extract_elements(source):
 
 
 async def save_to_database(information, pool):
-	'''
+	"""
 	使用异步IO方式保存数据到mysql中
 	注：如果不存在数据表，则创建对应的表
-	'''
+	"""
 	COLstr = ''  # 列的字段
 	ROWstr = ''  # 行字段
 	ColumnStyle = ' VARCHAR(255)'
@@ -102,9 +102,9 @@ async def save_to_database(information, pool):
 
 
 async def handle_elements(link, session):
-	'''
+	"""
 	获取详情页的内容并解析
-	'''
+	"""
 	print('开始获取: {}'.format(link))
 	source = await fetch(link, session)
 	# 添加到已爬取的集合中
@@ -113,9 +113,9 @@ async def handle_elements(link, session):
 
 
 async def consumer():
-	'''
+	"""
 	消耗未爬取的链接
-	'''
+	"""
 	async with aiohttp.ClientSession() as session:
 		while not stop:
 			if len(urls) != 0:
