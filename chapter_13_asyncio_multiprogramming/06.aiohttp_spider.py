@@ -63,43 +63,13 @@ def extract_elements(source):
 	"""
 	try:
 		dom = etree.HTML(source)
-		id = dom.xpath('//link[@rel="canonical"]/@href')[0]
 		title = dom.xpath('//title/text()')[0]
-		price = dom.xpath('//span[@class="unitPriceValue"]/text()')[0]
-		information = dict(re.compile('<li><span class="label">(.*?)</span>(.*?)</li>').findall(source))
-		information.update(title=title, price=price, url=id)
-		print(information)
-		asyncio.ensure_future(save_to_database(information, pool=pool))
+		print(title)
+
 
 	except Exception as e:
 		print('解析详情页出错！')
 		pass
-
-
-async def save_to_database(information, pool):
-	"""
-	使用异步IO方式保存数据到mysql中
-	注：如果不存在数据表，则创建对应的表
-	"""
-	COLstr = ''  # 列的字段
-	ROWstr = ''  # 行字段
-	ColumnStyle = ' VARCHAR(255)'
-	for key in information.keys():
-		COLstr = COLstr + ' ' + key + ColumnStyle + ','
-		ROWstr = (ROWstr + '"%s"' + ',') % (information[key])
-	# 异步IO方式插入数据库
-	async with pool.acquire() as conn:
-		async with conn.cursor() as cur:
-			try:
-				await cur.execute("SELECT * FROM  %s" % (TABLE_NAME))
-				await cur.execute("INSERT INTO %s VALUES (%s)" % (TABLE_NAME, ROWstr[:-1]))
-				print('插入数据成功')
-			except aiomysql.Error as e:
-				await cur.execute("CREATE TABLE %s (%s)" % (TABLE_NAME, COLstr[:-1]))
-				await cur.execute("INSERT INTO %s VALUES (%s)" % (TABLE_NAME, ROWstr[:-1]))
-			except aiomysql.Error as e:
-				print('mysql error %d: %s' % (e.args[0], e.args[1]))
-
 
 async def handle_elements(link, session):
 	"""
@@ -135,12 +105,6 @@ async def consumer():
 
 
 async def main(loop):
-	global pool
-	pool = await aiomysql.create_pool(host='127.0.0.1', port=3306,
-									  user='root', password='998219',
-									  db='aiomysql_lianjia', loop=loop, charset='utf8',
-									  autocommit=True)
-
 	for i in range(1, MAX_PAGE):
 		urls.append(url.format(city, str(i)))
 	print('爬取总页数：{} 任务开始...'.format(str(MAX_PAGE)))
