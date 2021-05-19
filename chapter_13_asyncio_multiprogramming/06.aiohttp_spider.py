@@ -12,7 +12,6 @@ import asyncio
 import re
 import aiohttp
 from pyquery import PyQuery
-import aiomysql
 from lxml import etree
 
 pool = ''
