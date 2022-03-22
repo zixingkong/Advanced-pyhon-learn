@@ -1,4 +1,4 @@
-from chapter04.class_method import Date
+from chapter_04_DeepInClassAndObject.class_method import Date
 class User:
     def __init__(self, birthday):
         self.__birthday = birthday

@@ -1,0 +1,1 @@
+from chapter_08_MetaClassProgramming.property_test import User
