@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Advanced-pyhon-learn.iml" filepath="$PROJECT_DIR$/.idea/Advanced-pyhon-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pyhon-small-examples/.idea/pyhon-small-examples.iml" filepath="$PROJECT_DIR$/../pyhon-small-examples/.idea/pyhon-small-examples.iml" />
     </modules>
   </component>
 </project>

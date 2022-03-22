@@ -20,11 +20,11 @@ def getTestMethods():
 
 
 def test_4():
-    print("test1")
+    print("test4")
 
 
 def test_5():
-    print('test2')
+    print('test5')
 
 
 if __name__ == '__main__':
