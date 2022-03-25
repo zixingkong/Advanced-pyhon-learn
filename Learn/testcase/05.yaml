@@ -1,0 +1,1395 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: 490df5d89afc0fcf29d5185b24d231c32775b413eebd59c7c3bc15209d485831
+    cni.projectcalico.org/podIP: 10.244.166.131/32
+    cni.projectcalico.org/podIPs: 10.244.166.131/32
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"curl-custom-sa","namespace":"default"},"spec":{"containers":[{"command":["sleep","9999999"],"image":"tutum/curl:1.0.0","name":"main"},{"image":"luksa/kubectl-proxy:1.6.2","name":"ambassador"}],"serviceAccountName":"foo"}}
+  creationTimestamp: "2022-01-27T07:39:03Z"
+  name: curl-custom-sa
+  namespace: default
+  resourceVersion: "5788735"
+  selfLink: /api/v1/namespaces/default/pods/curl-custom-sa
+  uid: 15a5692b-a880-4a9f-acd5-b7aed095f1d2
+spec:
+  containers:
+  - command:
+    - sleep
+    - "9999999"
+    image: tutum/curl:1.0.0
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5nxvt
+      readOnly: true
+  - image: luksa/kubectl-proxy:1.6.2
+    imagePullPolicy: IfNotPresent
+    name: ambassador
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C
+    terminationMessagePolicy: File
+    volumeMounts:
+"/tmp/kubectl-edit-3870455120.yaml" 131L, 4173C

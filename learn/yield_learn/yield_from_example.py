@@ -24,6 +24,7 @@ def sum(pro_name):
 
 
 def middle(key):
+    # 为什么添加这句就不报StopIteration异常了？
     while True:
         final_result[key] = yield from sum(key)
         print(key + '统计完成 ！！！')
